@@ -58,6 +58,13 @@ let g:pymode_folding = 0
 
 " Use l to toggle display of whitespace
 nmap l :set list!
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+inoremap <C-tab>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>
+
 " And set some nice chars to do it with
 set listchars=tab:»\ ,eol:¬
 
